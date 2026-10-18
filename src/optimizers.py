@@ -3,7 +3,7 @@ import numpy as np
 class SGD:
     """
         Gradiente descendente estocástico
-        w_k = w_{k-1} - η ∇f(w_{k-1})
+        x_k = x_{k-1} - η ∇f(x_{k-1})
     """
 
     def __init__(self, eta=0.01):
@@ -24,7 +24,7 @@ class Adam:
         m̂_k = m_k / (1-β1^k)
         v̂_k = v_k / (1-β2^k)
 
-        w_k = w_{k-1} - η m̂_k / (√v̂_k + ε)
+        x_k = x_{k-1} - η m̂_k / (√v̂_k + ε)
     """
 
     def __init__(self, eta=0.01, beta1=0.9, beta2=0.999, eps=1e-8):
@@ -61,7 +61,7 @@ class AdamW(Adam):
     """
         AdamW: Adaptive Moment Estimation with Weight Decay
 
-        w_k = w_{k-1} - η m̂_k / (√v̂_k + ε) - η λ w_{k-1}
+        x_k = x_{k-1} - η m̂_k / (√v̂_k + ε) - η λ x_{k-1}
     """
 
     def __init__(self, eta=0.01, lam=0.01, beta1=0.9, beta2=0.999, eps=1e-8):
