@@ -7,7 +7,7 @@ class ActivationFunction:
     def activate(self, v):
         return self.act_function(v)
 
-class Perceptron:
+class Model:
     def __init__(self, act_function, n_inputs, n_outputs, optimizer):
         self.act_function = act_function
         self.n_inputs = n_inputs

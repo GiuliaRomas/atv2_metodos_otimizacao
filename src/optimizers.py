@@ -1,19 +1,5 @@
 import numpy as np
 
-class SGD:
-    """
-        Gradiente descendente estocástico
-        x_k = x_{k-1} - η ∇f(x_{k-1})
-    """
-
-    def __init__(self, eta=0.01):
-        self.eta = eta # taxa de aprendizagem
-
-    def step(self, w, grad):
-        # atualiza os pesos na direção oposta ao gradiente
-        return w - self.eta * grad 
-
-
 class Adam:
     """
         Adam: Adaptive Moment Estimation
