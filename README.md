@@ -6,8 +6,8 @@ Implementações em Python de métodos de otimização baseados em gradiente.
 
 | Notebook | Descrição |
 |---|---|
-| `notebooks/PC5_c_AdamW.ipynb` | PC.5: Aproximação de $\cos(x)$ em $[0, 2\pi]$ por regressão polinomial, usando o otimizador AdamW (custo: MSE) |
 | `notebooks/PC3_b_gradiente_estocastico.ipynb` | PC.3 (b): gradiente estocástico na função de Himmelblau, com variação de parâmetros e trajetórias sobre as curvas de nível |
+| `notebooks/PC5_c_AdamW.ipynb` | PC.5: Aproximação de $\cos(x)$ em $[0, 2\pi]$ por regressão linear, usando o otimizador AdamW (custo: MSE) |
 
 ## Principais resultados
 

@@ -28,8 +28,8 @@ class Model:
         # e = y_t - y_e
         error = np.array(y_t) - np.array(y_e)
 
-        # ∇W = -e · xᵀ
-        grad = -np.outer(error, np.array(x))  
+        # ∇W = -2 · e · xᵀ
+        grad = -2 * np.outer(error, np.array(x))  
 
         # atualiza os pesos conforme o método do otimizador
         self.synaptic_weights = self.optimizer.step(self.synaptic_weights, grad)
